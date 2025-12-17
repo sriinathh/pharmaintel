@@ -1,0 +1,31 @@
+{
+  "navbar": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "chatbot": "Chatbot",
+    "reports": "Reports",
+    "profile": "Profile",
+    "admin": "Admin"
+  },
+  "buttons": {
+    "login": "Log in",
+    "register": "Register",
+    "export_pdf": "Export PDF"
+  },
+  "headings": {
+    "dashboard": "Dashboard",
+    "reports": "Reports",
+    "profile": "Profile",
+    "chatbot_placeholder": "Ask PharmaIntel AI about medicines, interactions, or clinical guidance."
+  },
+  "profile": {
+    "preferred_language": "Preferred language",
+    "medical_interests": "Medical interests",
+    "activity_history": "Activity History"
+  },
+  "reports": {
+    "summary": "Summary",
+    "findings": "Findings",
+    "recommendations": "Recommendations"
+  }
+}

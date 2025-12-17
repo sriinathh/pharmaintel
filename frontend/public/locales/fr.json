@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "chatbot": "Chatbot",
+    "reports": "Rapports",
+    "profile": "Profil",
+    "admin": "Admin"
+  },
+  "buttons": {
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "export_pdf": "Exporter PDF"
+  },
+  "headings": {
+    "dashboard": "Tableau de bord",
+    "reports": "Rapports",
+    "profile": "Profil",
+    "chatbot_placeholder": "Demandez à PharmaIntel AI au sujet des médicaments, des interactions ou des conseils cliniques."
+  }
+}

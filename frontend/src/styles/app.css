@@ -1,0 +1,60 @@
+/* App level custom styles for PharmaIntel AI */
+
+/* Scrollbar (subtle) */
+*::-webkit-scrollbar { width: 10px; height: 10px }
+*::-webkit-scrollbar-thumb { background: rgba(15,23,42,0.08); border-radius: 9999px }
+*::-webkit-scrollbar-track { background: transparent }
+
+/* Typing indicator dots animation */
+.pi-dots { display: inline-flex; gap: 6px; align-items: center }
+.pi-dots span { width: 8px; height: 8px; background: var(--color-primary); border-radius: 9999px; opacity: 0.85 }
+.pi-dots span:nth-child(1) { animation: pi-bounce 1s infinite 0s }
+.pi-dots span:nth-child(2) { animation: pi-bounce 1s infinite 0.15s }
+.pi-dots span:nth-child(3) { animation: pi-bounce 1s infinite 0.3s }
+
+@keyframes pi-bounce {
+  0%, 80%, 100% { transform: translateY(0); opacity: 0.6 }
+  40% { transform: translateY(-6px); opacity: 1 }
+}
+
+/* Print-friendly report view */
+@media print {
+  body { background: var(--card-bg) }
+  .no-print { display: none !important }
+  .report-print { box-shadow: none !important; border: none !important; }
+}
+
+/* Button utility classes for consistent buttons */
+.btn-primary { @apply px-4 py-2 rounded-md text-white disabled:opacity-50 disabled:cursor-not-allowed }
+.btn-primary { background-color: var(--color-primary) }
+.btn-secondary { @apply px-3 py-1.5 rounded-md border bg-white hover:bg-slate-50 }
+.btn-secondary { border-color: var(--border); color: var(--color-primary) }
+
+/* Landing page specific styles */
+.hero-title { font-size: 2rem; line-height: 1.05; color: var(--text-primary); font-weight: 600 }
+.hero-sub { color: var(--text-secondary); max-width: 52ch }
+.hero-ctas { display: inline-flex; gap: 12px; margin-top: 1rem }
+.hero-illustration { width: 100%; height: 14rem; object-fit: cover; border-radius: 0.5rem }
+
+@media (min-width: 768px) {
+  .hero-title { font-size: 2.5rem }
+  .hero-illustration { height: 18rem }
+}
+
+/* Navbar styles */
+.site-navbar { backdrop-filter: blur(4px); background: rgba(255,255,255,0.92); border-bottom-color: var(--muted-border) }
+.site-navbar .brand { display:inline-flex; align-items:center; gap:.6rem }
+.site-navbar .brand img { height:40px; width:40px; border-radius:.5rem; object-fit:cover }
+.site-navbar .nav-link { color: var(--text-secondary); transition: color .12s, transform .12s; }
+.site-navbar .nav-link:hover { color: var(--color-primary); transform: translateY(-1px) }
+.site-navbar .nav-link.active { color: var(--color-primary); font-weight:600 }
+.site-navbar .nav-ctas { display:flex; gap:.5rem; align-items:center }
+.site-navbar .menu-button { padding:.45rem .6rem; border-radius:.5rem; color:var(--text-secondary) }
+
+/* Footer styles */
+.site-footer { background: transparent; border-top-color: var(--border); color: var(--text-secondary) }
+.site-footer .muted { color: #94A3B8 }
+.site-footer .footer-inner { display:flex; gap:1rem; justify-content:space-between; align-items:center }
+.site-footer .footer-inner a { color: inherit; text-decoration:underline dotted; text-underline-offset:3px }
+
+

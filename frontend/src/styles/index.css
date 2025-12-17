@@ -1,0 +1,111 @@
+/* Global design tokens and layout for PharmaIntel AI */
+:root {
+  --bg-page: #F8FAFC;
+  --card-bg: #FFFFFF;
+  --color-primary: #2563EB;
+  --color-secondary: #0D9488;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --border: #E2E8F0;
+  --success: #16A34A;
+  --warning: #F59E0B;
+  --error: #DC2626;
+  /* Helpful lighter tints for backgrounds and subtle accents */
+  --primary-50: #EFF6FF;
+  --primary-100: #DBEEFF;
+  --muted-border: #E6EEF9;
+  --muted-100: #FBFDFF;
+  --warning-bg: #FEF3C7;
+}
+
+/* Page and layout */
+.page {
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  max-width: 80rem; /* matches max-w-7xl */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem; /* p-6 */
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem; /* rounded-xl-ish */
+  box-shadow: 0 4px 12px rgba(15,23,42,0.04);
+  padding: 1.25rem; /* p-5 */
+}
+
+.section { margin-bottom: 2rem; }
+
+/* Typography */
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+h1 { font-size: 1.875rem; line-height: 1.1; font-weight: 700; color: var(--text-primary); }
+h2 { font-size: 1.375rem; line-height: 1.15; font-weight: 600; color: var(--text-primary); }
+h3 { font-size: 1.125rem; font-weight: 600; color: var(--text-primary); }
+p, label, span, a { color: var(--text-secondary); }
+
+/* Utility tokens for consistent spacing */
+.spaced { margin-top: 0.75rem; }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- BASE ---------- */
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* ---------- LAYOUT ---------- */
+.page {
+  @apply max-w-7xl mx-auto px-6;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+.heading-xl {
+  @apply text-4xl md:text-5xl font-bold text-slate-900 leading-tight;
+}
+
+.heading-lg {
+  @apply text-2xl md:text-3xl font-semibold text-slate-900;
+}
+
+.subtitle {
+  @apply mt-4 text-slate-600;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+  @apply bg-white rounded-xl border border-slate-200 shadow-sm p-6;
+}
+
+.card-title {
+  @apply font-semibold text-slate-900;
+}
+
+.card-text {
+  @apply mt-2 text-slate-600;
+}
+
+/* ---------- STATS ---------- */
+.stat-title {
+  @apply text-xl font-semibold text-slate-900;
+}
+
+.stat-desc {
+  @apply mt-1 text-sm text-slate-600;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg font-medium transition;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply border border-blue-600 text-blue-600 hover:bg-blue-50;
+}

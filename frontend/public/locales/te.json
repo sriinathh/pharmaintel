@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "home": "హోమ్",
+    "dashboard": "డాష్‌బోర్డు",
+    "chatbot": "చాట్బాట్",
+    "reports": "రిపోర్టులు",
+    "profile": "ప్రొఫైల్",
+    "admin": "యాడ్మిన్"
+  },
+  "buttons": {
+    "login": "లాగిన్",
+    "register": "రిజిస్టర్",
+    "export_pdf": "PDF ఎగుమతి"
+  },
+  "headings": {
+    "dashboard": "డాష్‌బోర్డు",
+    "reports": "రిపోర్టులు",
+    "profile": "ప్రొఫైల్",
+    "chatbot_placeholder": "PharmaIntel AI నుండి ఔషధాలు, పరస్పర చర్యలు, లేదా క్లినికల్ మార్గదర్శకాలు అడగండి."
+  }
+}
